@@ -1,0 +1,73 @@
+{
+  "_from": "fetch-js",
+  "_id": "fetch-js@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-dJgNtYL4vJ1vcjtqMhHlKfob5l0=",
+  "_location": "/fetch-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "fetch-js",
+    "name": "fetch-js",
+    "escapedName": "fetch-js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/fetch-js/download/fetch-js-1.0.3.tgz",
+  "_shasum": "74980db582f8bc9d6f723b6a3211e529fa1be65d",
+  "_spec": "fetch-js",
+  "_where": "/Users/huanglizhu/Documents/three-demo-git/threeJs-demo-normal",
+  "author": {
+    "name": "Alan Clarke",
+    "email": "alan@qubit.com",
+    "url": "qubit.com"
+  },
+  "bugs": {
+    "url": "https://github.com/QubitProducts/fetch-js/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Reliably fetch scripts and execute callbacks once evaluated",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cors": "^2.7.1",
+    "expect.js": "^0.3.1",
+    "express": "^4.13.4",
+    "express-cache-control": "^1.0.2",
+    "istanbul": "^0.4.3",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-mocha": "^0.2.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
+    "standard": "^6.0.8",
+    "webpack": "^1.12.14"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/QubitProducts/fetch-js#readme",
+  "keywords": [
+    "fetch js",
+    "script loader"
+  ],
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "name": "fetch-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QubitProducts/fetch-js.git"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "version": "1.0.3"
+}

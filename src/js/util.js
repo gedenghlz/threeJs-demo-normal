@@ -1,3 +1,36 @@
+function addGeometry(scene, geom, name, texture, gui, controls) {
+    //MeshStandardMaterial:不使用近似值来表示光与表面的相互作用，而是使用物理上正确的模型。 我们的想法是，不是在特定照明下调整材质以使其看起来很好，而是可以创建一种材质，能够“正确”地应对所有光照场景
+    var mat = new THREE.MeshStandardMaterial(
+      {
+        map: texture,
+        metalness: 0.2,
+        // roughness: 0.1//材质的粗糙程度。0.0表示平滑的镜面反射，1.0表示完全漫反射。默认值为0.5。如果还提供roughnessMap，则两个值相乘。
+    });
+    var mesh = new THREE.Mesh(geom, mat);
+    mesh.castShadow = true;
+    
+    scene.add(mesh);
+    addBasicMaterialSettings(gui, controls, mat, name + '-THREE.Material');
+    addSpecificMaterialSettings(gui, controls, mat, name + '-THREE.MeshStandardMaterial');
+  
+    return mesh;
+  };
+  
+  function addGeometryWithMaterial(scene, geom, name, gui, controls, material) {
+    var mesh = new THREE.Mesh(geom, material);
+    mesh.castShadow = true;
+    
+    scene.add(mesh);
+    addBasicMaterialSettings(gui, controls, material, name + '-THREE.Material');
+    addSpecificMaterialSettings(gui, controls, material, name + '-Material');
+  
+    return mesh;
+  };
+
+
+
+
+
 /**
  * Initialize the statistics domelement
  * 
