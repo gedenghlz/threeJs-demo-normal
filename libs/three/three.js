@@ -43612,7 +43612,7 @@
 				var t = startEnd_startP / startEnd2;
 
 				if ( clampToLine ) {
-
+ 
 					t = _Math.clamp( t, 0, 1 );
 
 				}
