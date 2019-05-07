@@ -27,10 +27,6 @@ function addGeometry(scene, geom, name, texture, gui, controls) {
     return mesh;
   };
 
-
-
-
-
 /**
  * Initialize the statistics domelement
  * 
